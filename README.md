@@ -18,6 +18,9 @@ Run `make all`, and you'll end up with a `build/runtime.zip`. You can upload thi
 as a custom lambda layer, and then select that you are providing a runtime when you create
 your lambda function.
 
+## Uploading the runtime
+`aws lambda publish-layer-version --layer-name php-runtime --zip-file fileb://build/runtime.zip`
+
 ## Credits 
 
 #### https://github.com/stackery/php-lambda-layer
