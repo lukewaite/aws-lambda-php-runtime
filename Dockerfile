@@ -1,3 +1,8 @@
+# Unlike most docker images, where we want to optimize layers to be small and few
+# we'd rather leverage layer caching for faster builds when things change, since
+# we never ship this image, rather we extract the compiled binaries as part of
+# our build process.
+
 FROM amazonlinux:2017.03
 
 WORKDIR /tmp
