@@ -22,9 +22,7 @@ your lambda function.
 
 #### https://github.com/stackery/php-lambda-layer
 The Stackery runtime project provided a great starting point, and sample code for
-interacting with the AWS Lambda runtime APIs. Other projects examples use Guzzle,
-however I didn't want to go this route, and pollute the runtime with a specific
-version of any package.
+interacting with the AWS Lambda runtime APIs.
 
 #### https://aws.amazon.com/blogs/apn/aws-lambda-custom-runtime-for-php-a-practical-example
 A great writeup showing how to get started writing your own runtime, with examples in PHP!
