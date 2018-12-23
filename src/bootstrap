@@ -1,0 +1,4 @@
+#!/opt/bin/php -c/opt/php.ini
+<?php
+
+require __DIR__ . '/LambdaRuntimePhp/bootstrap.php';
