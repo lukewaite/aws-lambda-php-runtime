@@ -15,3 +15,7 @@ $(binaries): Dockerfile
 build/runtime.zip: $(binaries) $(runtime_files)
 	mkdir -p build
 	cd src && zip -r ../build/runtime.zip bin LambdaRuntimePhp bootstrap
+
+.PHONY : clean
+clean:
+	-rm $(binaries) build/runtime.zip
