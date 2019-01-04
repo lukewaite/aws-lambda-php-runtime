@@ -17,12 +17,13 @@ RUN \
     && make \
     && make install
 
+ENV PHP_VERSION 7.3.0
 
 RUN \
-    curl -sL http://php.net/distributions/php-7.0.33.tar.gz | tar -xvz
+    curl -sL http://php.net/distributions/php-${PHP_VERSION}.tar.gz | tar -xvz
 
 RUN \
     mkdir -p /tmp/php-7-bin \
-    && cd php-7.0.33 \
+    && cd php-${PHP_VERSION} \
     && ./configure --prefix /tmp/php-7-bin --with-openssl=/usr/local/ssl --with-curl --with-zlib --enable-mbstring \
     && make install
